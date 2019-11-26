@@ -10,7 +10,7 @@ model FestivalBasicQueens
 global {
     
     int NUMBER_OF_NEIGHBORS <- 8; //# of neighbors for each cell for this simulation. 8 corresponds to Moore type neighbors (includes diagonals)
-    int NUMBER_OF_QUEENS <- 10; //Total # of queens to be used for this simulation
+    int NUMBER_OF_QUEENS <- 12; //Total # of queens to be used for this simulation
     int globalRow;
     
     list<GridCell> GRID_CELLS;
@@ -362,7 +362,7 @@ grid GridCell width: NUMBER_OF_QUEENS height: NUMBER_OF_QUEENS neighbors: NUMBER
     }
 }
 
-experiment main type: gui {
+experiment Queens type: gui {
     output {
         display main_display {
             grid GridCell lines: #black;
